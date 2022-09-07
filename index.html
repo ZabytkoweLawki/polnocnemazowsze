@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Strona projektu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #000;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('w3images/test_1.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("w3images/MKiDNkolor.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("w3images/MKiDNkolor.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 1px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1900px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 600px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Opis projektu</a>
+	<a href="#aboutKatalog" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Katalog obiektów</a>
+	<a href="#aboutImportowane" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Obiekty importowane</a>
+	<a href="#aboutWarsztaty" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Warsztaty i twórcy ludowi</a>
+    <a href="#aboutEklektyczne" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Ławki eklektyczne</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">Opis projektu</a>
+	<a href="#aboutKatalog" class="w3-bar-item w3-button" onclick="toggleFunction()">Katalog obiektów</a>
+    <a href="#aboutImportowane" class="w3-bar-item w3-button" onclick="toggleFunction()">Obiekty importowane</a>
+	<a href="#aboutWarsztaty" class="w3-bar-item w3-button" onclick="toggleFunction()">Warsztaty i twórcy ludowi</a>
+	<a href="#aboutEklektyczne" class="w3-bar-item w3-button" onclick="toggleFunction()">Ławki eklektyczne</a>
+  </div>
+</div>
+
+<br><br>
+
+<!-- First Parallax Image with Logo Text w3-opacity-min -->
+<div class="bgimg-1 w3-display-container " id="home">
+  <div class="w3-display-bottommiddle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Badania  <span class="w3-hide-small">zabytkowych ławek w kościołach północnego Mazowsza z przełomu </span> XIX i XXw.</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">Opis projektu</h3>
+ <!-- <p class="w3-center"><em>I love photography</em></p> -->
+  <p align="justify">W niniejszym projekcie przebadano i skatalogowano siedziska i ławki wykonane na przełomie XIX i XXw w kościołach historycznego północnego Mazowsza,
+  obejmującego ziemię ostrołęcką i łomżyńską. Pozwoliło to wyodrębnić pewne analogie pomiędzy znanymi z badań in situ i ikonografii sprzętami i pogrupować je, a także stało
+  się przyczynkiem do poszukiwań warsztatów stolarsko-snycerskich działających na tym terenie. Przede wszystkim były to warsztaty warszawskie, np. Wytwórnia Zygmunta
+  Węgrzyckiego, M. Kroczewskiego, Franciszka Klimeckiego, ale także te&nbsp;tworzące snycerkę i rzeźby wysokiej jakości, np. Jana Jerzego Plerscha. Z całą pewnością istniały
+  one również w Ostrołęce (warsztat Mikołaja Tomaszewskiego i Jana Dubanowskiego), Zarębach Kościelnych, Zawadach. Jak się okazało na podstawie badań, sprzęty były także
+  sprowadzane z&nbsp;warsztatów nieco oddalonych, np. z Lipna czy Pułtuska w diecezji płockiej, Białegostoku – Warsztat Jana Moczydłowskiego, czy Domanowa k.&nbsp;Białegostoku.
+  Niektóre obiekty sprowadzono z odległego Śląska, a nawet z zagranicy (Münster).</p>
+  
+  <p align="justify">Przy okazji badań ławek z kościoła w Czerwinie k. Ostrołęki (1933-35r.) zwrócono uwagę na ich wyróżniające się formy. Po przeprowadzeniu wstępnych badań okazało się,
+	  że posiadają one bardzo wysoki poziom wartości, formy artystyczno-ludowe, charakterystyczną mieszaną konstrukcję (ramowo-płycinową i deskową) i wykończenie typowe dla
+	  tego rodzaju zabytkowych mebli sakralnych, czyli mazerunek. Kwerendy w&nbsp;tym kierunku wykazały, że w regionie północnego Mazowsza działał na przełomie XIX i XX w.
+	  aż do lat 20-tych warsztat stolarsko-snycerski, który zrealizował analogiczne wyposażenie do kilku kościołów, m.in. w Czerwinie k. Ostrołęki, Drozdowie k. Łomży,
+	  Słuczu. Warsztat o tyle interesujący, że dotychczas nie był w ogóle znany, a z jego istnienia nie zdawano sobie nawet sprawy. Wysoka wartość artystyczna wytworów
+	  tego warsztatu potwierdza trwałość form artystycznych na wskazanym obszarze, ale też wartość naukową. Pierwsze ławki – z Drozdowa, z 1880r. –&nbsp;łączy się z osobą
+	  Witolda Lanciego, który zaprojektował cały kościół i część wyposażenia do niego. Wobec braku źródeł, jest to trudne do&nbsp;potwierdzenia. Do dnia dzisiejszego ławki
+	  wykonane przez ten warsztat pozostały już tylko w Czerwinie.</p>
+  </div>
+ </div> 
+  <div class="w3-container w3-center">
+  <h4 class="w3-center"> <p><b> Zrealizowano w ramach stypendium Ministra Kultury i Dziedzictwa Narodowego</b></p> </h4>
+  <img src="w3images/MKiDNkolor.jpg" alt="MKiDNkolor" style="width:120%;max-width:620px">
+</div> 
+
+
+
+
+  
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="aboutKatalog">
+  <h2 class="w3-center">Badania zabytkowych ławek w kościołach północnego Mazowsza <br>z przełomu XIX i XXw.</h2>
+ <!-- <p class="w3-center"><em>I love photography</em></p> -->
+  <p align="justify">
+	Projekt jest przyczynkiem do badań ławek kościelnych na terenie północnego Mazowsza, zwłaszcza niewielkiej i nieznanej dotychczas grupy ławek związanych z Czerwinem.<br>
+Na omawianym terenie nie zachowało się wiele zabytkowych ławek kościelnych w ogóle, bowiem większość z nich zniknęła już dawno z&nbsp;naszego krajobrazu kulturowego, a niewielka 
+liczba pozostałych po cichu znika dalej, jako najmniej ważna w hierarchii ważności sprzętów kościelnych, i&nbsp;najszybciej ulegająca zniszczeniu technicznemu. Znane są, już tylko 
+z literatury sedilia średniowieczne, do rzadkości należą ławki barokowe, czy&nbsp;klasycystyczne, a i stolarka z XIX i XXw. jest także likwidowana. Ze względu na to, że dotychczas
+ nie powstało wiele opracowań zajmujących się w&nbsp;szczególności ławkami, zwłaszcza na terenie Mazowsza północnego, w niniejszym katalogu zostanie przywołana wiedza o 
+ tych wcześniejszych sprzętach, zwłaszcza nieistniejących. Jednak główny zakres chronologiczny tematu przyjęty na potrzeby niniejszego opracowania obejmuje przede wszystkim 
+ obiekty z przełomu XIX i XXw. oraz początku XXw., a więc okresu zagęszczania sieci parafialnej w nowo powstającej diecezji łomżyńskiej, a tym samym budowy i wyposażania nowych 
+ obiektów sakralnych, co&nbsp;miało miejsce aż do lat 30-tych tego stulecia. Stylistyka tych nowych kościołów to przede wszystkim wciąż popularny na tych terenach neogotyk, 
+ rzadziej neoromanizm, pochodzący ze stolicy. Zatem i&nbsp;wyposażenie większości nowych, a i pewnej liczby istniejących kościołów, także było neogotyckie lub łączyło oba te style.</p>
+  
+  <h3 class="w3-center">Warsztaty snycerskie działające na terenie północnego Mazowsza <br> Katalog obiektów.</h3>
+ <p align="justify">  	Przez stulecia wykształciło się i istniało w Polsce wiele warsztatów stolarskich i ośrodków meblarstwa sakralnego. 
+ Wiele z nich należało do&nbsp;wybitnych i bardzo aktywnych, zwłaszcza w okresie nowożytności, były one znane nawet za granicą. W interesującym nas okresie przełomu XIX i XXw. 
+ bardzo aktywne były przede wszystkim warsztaty w stolicy, które produkowały sprzęty dla szeroko pojmowanego regionu Mazowsza, ale też Podlasia. Można tu wymienić Wytwórnię 
+ Zygmunta Węgrzyckiego, warsztat M. Kroczewskiego, Franciszka Klimeckiego, ale także te&nbsp;tworzące snycerkę
+i rzeźby wysokiej jakości, np. Jana Jerzego Plerscha. Istniało tu także kilka warsztatów lokalnych, które wykonywały sprzęty o charakterze i 
+formach ludowych. Zakonni stolarze działali przede wszystkim  w dobie baroku i realizowali meble sakralne dla klasztorów w&nbsp;swoich prowincjach zakonnych. 
+Pojedyncze obiekty wyposażenia były sprowadzane z sąsiednich diecezji, a niektóre nawet z odległego Śląska, czy zagranicy (Münster).</p> 
+  
+  <h3 class="w3-left-align">  Kleczkowo </h3>
+  <p align="justify"> Późnogotyckie stalle z kościoła par. w Kleczkowie znane są z fotografii wykonanej w 1954r. Były to bogato rzeźbione, późnogotyckie siedziska, miały wyrytą datę 1521 lub 1523. Ich wykonawca nie jest znany.
+ </p> 
+  
+  <h3 class="w3-left-align">  Zaręby Kościelne </h3>
+  <p align="justify"> Do kompletnych kolekcji wyposażenia należą ołtarze, ambona i ławki z kościoła poreformackiego
+w Zarębach Kościelnych z ost. ćw. XVIIIw., wykonane, jak się przypuszcza, przez zakonnego artystę. Ławki te są 5-członowe, z podłogą, o otwartych bokach. 
+Zaplecki mają konstrukcję ramowo-płycinową, podzieloną na 3 prostokątne płyciny. Ścianki boczne są deskowe o giętych liniach,
+ze żłobkowaniem powtarzającym ich&nbsp;kształt, zamknięte giętym wolutowo gzymsem. Ławki jeszcze
+w 1969r. były w złym stanie, obecnie stan zachowania nie budzi większych zastrzeżeń. </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_01.jpg" alt="Ryc_01" style="width:120%;max-width:620px">
+  <p>1. Zaręby Kościelne, ławki, Karta ewidencyjna, stan zachowania w 1967r.</p>
+  <img src="w3images/Ryc_02.jpg" alt="Ryc_02" style="width:120%;max-width:620px">
+  <p>2. Zaręby Kościelne, ławki współcześnie.</p>
+</div> 
+  
+  <h3 class="w3-left-align">  Łomża, kościół kapucyński </h3>
+  <p align="justify"> 	W kościele klasztornym zakonu kapucynów w Łomży, wzniesionym w latach 1777-89, jednolite wyposażenie snycerskie, w skład którego weszły ołtarze
+  i ambona, wykonał stolarz łomżyński Jan Żołdykowski. Wszystkie te elementy wyposażenia zostały wykonane ok. 1794r. w stylistyce późnobarokowej z ornamentami rokokowymi, 
+  podobnie też ławki, opisane w Katalogu Zabytków Sztuki, istniejące w latach 80-tych, datowano na&nbsp;koniec XVIIIw. </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_03.jpg" alt="Ryc_03" style="width:100%;max-width:420px">
+  <p> 3. Łomża, kościół kapucynów, ławki współcześnie </p>
+  </div> 
+ 
+ <h3 class="w3-left-align">  Łomża, katedra, kaplica południowa </h3>
+  <p align="justify"> 	Znane są wykonane z drewna pozłacanego stalle rokokowe z kaplicy południowej katedry w Łomży, które I. Galicka i H. Sygietyńska datowały na&nbsp;II&nbsp;poł. XVIIIw.
+  W 1963r. określono ich stan zachowania jako dobry. </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_04.jpg" alt="Ryc_04" style="width:100%;max-width:620px">
+  <p> 4. Łomża, katedra, ławki z kaplicy płdn., Karta ewidencyjna, stan zachowania z 1963r. </p>
+  </div> 
+  
+ <h3 class="w3-left-align">  Brańszczyk </h3>
+  <p align="justify"> Z pocz. XIXw. pochodziła nieistniejąca, pojedyncza ławka kolatorska z kościoła
+w Brańszczyku, pow. Wyszków, umieszczona po południowej stronie prezbiterium. Należała ona do zespołu pierwotnego wyposażenia kościoła – klasycystycznego i neobarokowego,
+ choć w późniejszym czasie była przerabiana. Przedpiersie korpusu na cokole miała ujęte po bokach profilowanymi, 
+uproszczonymi pilastrami, z kwadratową, wgłębną płyciną z uszakami na narożach, zamknięte górą profilowanym gzymsem. Zaplecek późniejszy, w górnej części z płyciną o 
+liniach wklęsło-wypukłych, zwieńczony stylizowaną muszlą. Przedpiersie zostało zbudowane w konstrukcji ramowo-płycinowej albo deskowej, z nałożonym deskowaniem okalającym 
+wgłębną płycinę. Nie można z archiwalnego zdjęcia odczytać konstrukcji zaplecka, natomiast jego zwieńczenie stanowiła jedna deska o dekoracyjnie wyciętych, malowanych brzegach. 
+Jeszcze w 1968r. informowano o zniszczeniach obiektu związanych z&nbsp;użytkowaniem. Po 1993r. ławki zostały zlikwidowane. </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_05.jpg" alt="Ryc_05" style="width:100%;max-width:320px">
+  <p> 5. Brańszczyk, ławka kolatorska, Karta ewidencyjna, stan zachowania z 1968r. </p>
+  </div> 
+  
+ <h3 class="w3-left-align"> Stawiski  </h3>
+  <p align="justify"> Do klasycystycznych mebli zaliczono także ławę kolatorską z kościoła w Stawiskach z I poł. XIXw. lub z k. XVIIIw., która miała wg. tradycji należeć do fundacji rodziny Kisielnickich. Ława ta, wykonana oryginalnie z niemalowanego drewna jesionowego, dębu i lipy, miała nadaną prostą konstrukcję ramowo-płycinową i skromną dekorację: uproszczone pilastry na ramach przedpiersia, granulki pod gzymsem wieńczącym i nad cokołem, zaplecek zwieńczony ozdobną listwą
+z półkolistymi wycięciami. Ścianki boczne dwuosiowe, z czego jedna oś to drzwiczki ramowo-płycinowe z profilowanym jak w przedpiersiu gzymsem i cokołem. Drzwi zamocowane kutymi zawiasami oraz zamkami w formie plakietek z&nbsp;kwiatem. Ława w latach 60-tych i 70-tych była
+w nieznacznym stopniu uszkodzona mechanicznie. Już w tym czasie zwrócono uwagę na wysoką wartość naukową, jaką reprezentowała ława. Na terenie powiatu kolneńskiego ława stanowiła jedyny zachowany przykład miejscowego meblarstwa na dobrym poziomie. ,,Jako niemalowana
+i nieodnawiana  mogła dawać wyobrażenie o typie sprzętów kościelnych z XVIIIw., jakie zapewne znajdowały się w większości kościołów na tym terenie.” </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_06.jpg" alt="Ryc_06" style="width:100%;max-width:620px">
+  <p> 6. Stawiski, ława kolatorska, Karta ewidencyjna, stan zachowania z 1964r. </p>
+  </div> 
+  
+  <h3 class="w3-left-align"> Kolno  </h3>
+  <p align="justify"> 	W kościele pw. św. Anny w Kolnie znajdowała się dębowa ławka neorenesansowa z 4 ćw. XIXw., która najprawdopodobniej była wykonana w&nbsp;konstrukcji 
+  ramowo-płycinowej jako jednoosiowa. Zdobiona płaskorzeźbieniem w zaplecku – w partii płyciny symetrycznym ornamentem roślinnym z rozetą, a w zwieńczeniu symetrycznym 
+  ornamentem z ptakami w podrzeźbianym obramieniu. Siedzisko płytko podrzeźbiane gęstym, symetrycznym ornamentem roślinnym. Bardzo bogato płaskorzeźbione przedpiersie ozdobione
+  w partii płyciny symetrycznym ornamentem wici akantowej z rozetą pośrodku, w ramie fryzy z arkadowym ornamentem. W 1979r. stan obiektu był zadowalający. </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_07.jpg" alt="Ryc_07" style="width:100%;max-width:320px">
+  <p> 7. Kolno, ławka z klęcznikiem, Karta ewidencyjna, stan zachowania z 1979r. </p>
+  </div> 
+  
+  <h3 class="w3-left-align"> Szczuczyn  </h3>
+  <p align="justify"> W popijarskim, barokowym kościele w Szczuczynie, przy południowej ścianie prezbiterium, znajdują się polichromowane i częściowo złocone stalle
+  eklektyczne z 1894r. Są one 5-osiowe, przy czym każda z osi, zarówno w zaplecku, jak i przedpiersiu, jest dekorowana zróżnicowanymi płycinami z ażurowymi
+  elementami dekoracyjnymi, splecionymi taśmami, wicią kwiatową, na zapleckach
+ze stylizowaną tarczą herbową i&nbsp;wachlarzem, zwieńczone lambrekinem i motywem muszli
+z wolutami. </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_08.jpg" alt="Ryc_08" style="width:100%;max-width:620px">
+  <p> 8. Szczuczyn, stalle, Karta ewidencyjna, stan zachowania z  1979r. </p>
+  </div> 
+  
+  
+  <h3 class="w3-left-align"> Kolno  </h3>
+  <p align="justify"> W Kolnie znajduje się klęcznik określany w literaturze jako eklektyczny z elementami neorenesansu, który pochodzi z k. XIXw. Jest to bardzo bogato dekorowane, przenośne siedzisko
+z oddzielnym pulpitem, opracowane snycersko dekoracją zoomorficzną i roślinną, głowami gryfów.
+ </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_09.jpg" alt="Ryc_09" style="width:100%;max-width:420px">
+  <p> 9. Kolno, klęcznik, Karta ewidencyjna, stan zachowania z 1997r. </p>
+  </div> 
+  
+  <h3 class="w3-left-align">  Drozdowo </h3>
+  <p align="justify"> 	Ławki z kościoła w Drozdowie są zaliczane do eklektycznych. Datuje się je na ostatnią ćwierć XIXw. Deskowe zaplecki, ale i boki świadczą o&nbsp;doborze
+  przez stolarza dość tradycyjnego typu konstrukcji, natomiast przedpiersia i zaplecki zamykające segmenty są wykonane w konstrukcji ramowo-płycinowej. Bardzo dekoracyjne są 
+  boki wykrawane snycersko: na wysokości siedziska
+z dekoracyjną, okrągłą płyciną o centralizującej dekoracji; nad którą bezporządkowa kolumienka podtrzymująca zwieńczenie z płaskorzeźbionym krzyżem, zwieńczone formą 
+stylizowanej muszli
+i wachlarza, rozdzielonych na trzy strony, z centralnym motywem stylizowanego kaboszonu. Przedpiersia i zaplecki zamykające segmenty są&nbsp;dekorowane trzema płycinami, 
+zdobionymi podwójnym łukiem pełnym. W latach 80 ławki były w dobrym stanie, w 2009r. częściowo wymagały naprawy, natomiast obecnie zostały przeniesione na czas remontu 
+wnętrza kościoła.
+ </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_10.jpg" alt="Ryc_10" style="width:100%;max-width:620px">
+  <p> 10. Drozdowo, ławki, stan wnętrza z 2019r., obecnie przeniesione w nieznane miejsce. </p>
+  </div> 
+  
+  <h3 class="w3-left-align"> Słucz  </h3>
+  <p align="justify"> 	Analogiczne ławki znajdowały się w kościele neogotyckim w Słuczu. Obecnie już nie istnieją, w ich miejsce wstawiono nowe, wzorowane częściowo 
+  na oryginalnych. </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_11.jpg" alt="Ryc_11" style="width:100%;max-width:620px">
+  <p> 11. Słucz, nieistniejące ławki i posadzka. </p>
+  </div>  
+   
+  <h3 class="w3-left-align"> Czerwin </h3>
+  <p align="justify"> 	W kościele w Czerwinie znajduje się 28 ławek wybudowanych po zniszczeniu kościoła przez wojska rosyjskie. Zostały one wstawione do wnętrza w latach
+  1933-35. Moduły składające się z 7 siedzisk umieszczone są na podwyższonej podłodze, złożone z przedpiersia, siedzisk połączonych
+z&nbsp;pulpitami i podnóżkami oraz zaplecka. Przedpiersia i zaplecki dekorowane analogicznie, podzielone ramami na cztery płyciny, które udekorowane są podwójnymi,
+ profilowanymi arkaturami. Boki ławek na szerszych, uskokowych cokołach, zdobione pionową ramową dekoracją ujmującą wgłębną płycinę arkadowym profilem. W miejscu
+ siedziska znajduje się półokrągły występ, dekorowany wgłębną płyciną i ramą o&nbsp;kształcie krzyża, połączoną z pionową ramową dekoracją. Nad występem umieszczona jest
+ niewysoka kolumienka z bazą i torusem, o gładkim trzonie,
+z umieszczonym na anulusie kapitelem nawiązującym do kostkowego, dekorowanym podrzeźbianymi ślimacznicami. Pionowa rama w&nbsp;górnej, zamkniętej arkadowo części, dekorowana
+ jest podrzeźbianym sześcioramiennym kwiatem. Całość zamknięta jest od góry dekoracyjnym, stylizowanym, podrzeźbianym pół-kwiatonem na bazie o bokach zaokrąglonych dołem. </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_12.jpg" alt="Ryc_12" style="width:100%;max-width:620px">
+  <p> 12. Czerwin, ławki, stan zachowania współcześnie. </p>
+  </div> 
+  
+  <h3 class="w3-left-align"> Kolno  </h3>
+  <p align="justify"> W Kolnie, w kościele klasycystycznym, wzniesionym w 1835r., na podstawie projektów publikowanych przez Piotra Aignera, z dobudowanymi w&nbsp;1906-7 
+  neogotyckimi kaplicami, znajduje się wyposażenie o formach dość wyjątkowych, jak na te tereny. O ile wyposażenie to jako całość nie stanowi jakiejś zwartej stylistycznie grupy, bowiem ołtarz
+  główny (1893r.) jest neorokokowy, ołtarze
+w kaplicach bocznych z pocz. XXw. - o&nbsp;charakterze klasycyzującego neobaroku, szafa prospektu organowego (1897r.) neorenesansowa, konfesjonały neogotyckie z pocz. XX, to&nbsp;wyjątek
+ stanowią tu dwie stalle oraz ławki w nawie głównej - secesyjne z pocz. XXw. Ławki te są wykonane
+w konstrukcji ramowo-płycinowej, ze&nbsp;ściankami bocznymi deskowymi, wyciętymi przy siedzisku płynną linią wklęsło-wypukłą. Ścianki boczne dekorowane są płaskim, wgłębnym reliefem
+ wici roślinnej, w górnej części z niesymetrycznym motywem kwiatów, w dolnej symetrycznym reliefem kwiatowym. Kompletem do ławek są stalle, identycznie dekorowane, pochodzące
+ z I ćw. XXw. Sedilia te są 7-osiowe, w konstrukcji ramowo-płycinowej, o osiach rozdzielonych kanelowanymi pilastrami z płaskorzeźbionym, szerokim liściem, o płycinach w 
+ przedpiersiu dekorowanych secesyjnym, stylizowanym, niesymetrycznym drzewem, połączonym z wicią, natomiast w zapleckach także dekorowane secesyjnym motywem drzewa – o bardziej
+ rozbudowanej, egzotycznej formie.
+Na baldachimach nowsze krzyże, na ażurowych, szerokich cokołach. Ścianki boczne o falistych spływach, z&nbsp;kratką do słuchania spowiedzi, o drzwiczkach ozdobionych płaskorzeźbionym
+ ornamentem roślinnym. W 1979r. stan stalli był dobry. </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_13.jpg" alt="Ryc_13" style="width:100%;max-width:620px">
+  <p> 13. Kolno, ławki w nawie głównej współcześnie. </p>
+  </div> 
+  
+  <h3 class="w3-left-align"> Kuczyn  </h3>
+  <p align="justify"> Większość ławek z analizowanego obszaru należy do zespołów wyposażenia świątyń wzniesionych na przeł. XIX i XXw. lub na pocz. XXw., stylistycznie nawiązujących do neogotyku. Wyposażenie neogotyckiego kościoła w Kuczynie, wzniesionego w latach 1888-93, to kolejny przykład jednorodnego zespołu powiązanego stylistycznie z formami architektury, zaprojektowanego
+w całości przez jednego projektanta. Zostało ono wykonane w 1900r. Część tego wyposażenia dekorowana jest snycersko, tj. stalle, połączone z ołtarzem głównym z płaskorzeźbami apostołów;
+a&nbsp;część dekoracjami wypalanymi, tj. ławka kolatorska w kaplicy z dekoracjami figuralnymi
+w płycinach.
+ </p>   
+  
+  <h3 class="w3-left-align">  Szczepankowo </h3>
+  <p align="justify"> W Szczepankowie znajduje się neogotycka ławka, datowana na kon. XIXw. Ławka zbudowana w konstrukcji ramowo-płycinowej, z przedpiersiem i&nbsp;zapleckiem 
+  z ławką na wspólnej podstawie. Przedpiersie zbudowane z 5 architektonicznych płycin, dekorowanych nakładanymi na wierzch biforialnymi blendami z maswerkiem w kształcie
+  rybiego pęcherza z profilowanych listew. Zaplecek zbudowany z 3 prostych płycin. Ścianki boczne ławki otwarte, wycięte na kształt trójliścia, w partii siedziska wybrzuszonego
+  półokrągło. W 2008r. stwierdzono ubytki listew w maswerku i liczne drobne wgniecenia podstawy. Ławka była wtórnie pomalowana, pierwotnej kolorystyki nie znamy. </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_14.jpg" alt="Ryc_14" style="width:100%;max-width:620px">
+  <p> 14. Szczepankowo, ławka kolatorska, Karta ewidencyjna, stan zachowania z 2008r. </p>
+  </div> 
+  
+  <h3 class="w3-left-align">  Myszyniec </h3>
+  <p align="justify"> Zespół ławek z kościoła neogotyckiego w Myszyńcu. Przedpiersia tych ławek zdobione są płycinami z dekoracyjnymi, stylizowanymi maswerkami, boczne ścianki
+  z motywem rybiego pęcherza oraz na wysokości siedziska – trójliścia, zamknięte stylizowanym daszkiem. Budowę ławek, podobnie jak pozostałych elementów wyposażenia nowo
+  wzniesionego, neogotyckiego kościoła (ołtarze, ambona, chrzcielnica, balustrada, meble zakrystyjne), zlecono w 1928r. Wytwórni Zygmunta Węgrzyckiego z Warszawy. Meble wykonano
+  na przełomie lat 20- i 30-tych XXw. Na&nbsp;wykonanie całego wyposażenia przeznaczono 132 tys. zł. W 1964r. ławek było 24, natomiast w 2007r. dostawiono 16 dodatkowych ławek. </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_15.jpg" alt="Ryc_15" style="width:100%;max-width:620px">
+  <p> 15. Myszyniec, ławki, Karta ewidencyjna, stan zachowania z 1996r. </p>
+  <img src="w3images/Ryc_15_b.jpg" alt="Ryc_15_b" style="width:100%;max-width:320px">
+  <p> 16. Myszyniec, ławki, stan zachowania współcześnie. </p>
+  </div> 
+  
+  <h3 class="w3-left-align">  Czarnia k. Myszyńca </h3>
+  <p align="justify"> Analogiczne ławki znajdują się w neogotyckim kościele w Czarni k. Myszyńca, wzniesionym w latach 1903-1907. </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_15_c.jpg" alt="Ryc_15_c" style="width:100%;max-width:220px">
+  <p> 17. Czarnia k. Myszyńca, ławki, stan zachowania współcześnie. </p>
+  </div>
+  
+  
+  <h3 class="w3-left-align">  Sokoły </h3>
+  <p align="justify"> Z pewnością należy także wspomnieć w tym miejscu o wystroju kościoła w Sokołach z ok. 1920-30r., które pochodzi z tej samej, warszawskiej firmy
+  M. Kroczewskiego i Z. Węgrzeckiego. Ławki te mają ażurowe podstawy ścianek bocznych, które dekorowane są w górnej partii oprócz rybiego pęcherza, także trójliściem,
+  natomiast boki nad siedziskiem dekorowane są wywiniętym, ażurowym elementem. </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_17.jpg" alt="Ryc_17" style="width:100%;max-width:620px">
+  <p> 18. Sokoły, ławki, stan współczesny. </p>
+  <img src="w3images/Ryc_18.jpg" alt="Ryc_18" style="width:100%;max-width:620px">
+  <p> 19. Sokoły, ławki, stan współczesny. </p>
+  <img src="w3images/Ryc_18_b.jpg" alt="Ryc_18_b" style="width:100%;max-width:620px">
+  <p> 20. Reklama zakładu M. Kroczewskiego i Z. Węgrzeckiego z Warszawy, źródło: https://cybra.lodz.pl/Content/15344/SpisDuchowienstwa_1913.pdf </p>
+  </div> 
+  
+  
+  <h3 class="w3-left-align">  Poświętne </h3>
+  <p align="justify"> Analogiczne jak w Sokołach ażurowe podstawy, a także wykończenie ścianek bocznych przy siedziskach,
+  mają ławki z kościoła w Poświętnem k.&nbsp;Łap, wzniesionego w latach 1906-1907. Aczkolwiek ścianki boczne zamknięte są górą stylizowanym kwiatonem-fialą,
+  a poniżej daszku –&nbsp;czwórliściem. </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_18_c.jpg" alt="Ryc_18_c" style="width:100%;max-width:620px">
+  <p> 21. Poświętne, ławki, stan zachowania współcześnie. </p>
+  </div>
+  
+  
+  <h3 class="w3-left-align">  Stary Lubotyń </h3>
+  <p align="justify"> W kościele w Starym Lubotyniu, wzniesionym w stylu neogotyckim w 1895r., znajdują się, być może nieco starsze ławki o formach bardzo bliskich 
+  tym myszynieckim. Aczkolwiek boczne ścianki są tu rozdzielone w poziomie, daszek zamykający je ozdobiony jest stylizowanym kwiatonem-fialą, a&nbsp;nad siedziskiem znajdują się
+  proste w formie, nie dekorowane spływy. </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_18_d.jpg" alt="Ryc_18_d" style="width:100%;max-width:320px">
+  <p> 22. Stary Lubotyń, ławki, stan zachowania współcześnie. </p>
+  </div>
+  
+  
+  <h3 class="w3-left-align">  Kulesze Kościelne </h3>
+  <p align="justify"> Kościół w Kuleszach Kościelnych Józefa Piusa Dziekońskiego (1911-15) i Adama Piotrowskiego (1918-25), gdzie w nowo wzniesionym obiekcie wprowadzono
+  wyposażenie (ołtarz, ambona, konfesjonały) w jednolitej, nawiązującej do architektury stylistyce neogotyku (1925). </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_16.jpg" alt="Ryc_16" style="width:100%;max-width:620px">
+  <p> 23. Kulesze Kościelne, ławki, stan zachowania współcześnie. </p>
+  </div> 
+  
+  
+  
+ <!-- <h3 class="w3-left-align">  Lachowo </h3>
+  <p align="justify"> 	O ile wyposażenie kościołów w powiecie kolneńskim i grajewskim jest wyjątkowo skromne,
+to zespół w Lachowie na tym tle jest wyjątkiem. Neogotycką świątynię wzniesioną na podstawie projektu Henryka Marconiego (1847r.) po modyfikacji Adama Skowrońskiego,
+ zdobiło jednolite wyposażenie w tym samym stylu, wykonane zapewne przez warszawski zakład Franciszka Klimeckiego w latach 1878 – ołtarz główny, 1879–&nbsp;ołtarze boczne
+ i konfesjonały. </p> -->   
+  
+  <h3 class="w3-left-align"> Kobylin Borzymy - ławki  </h3>
+  <p align="justify"> 	W miejscowości Kobylin Borzymy znajdują się analogiczne ławki neogotyckie z pocz. XXw., ramowo-płycinowe, o bogatej dekoracji snycerskiej. Boki w dolnej części
+  o płycinach zamkniętych górą i dołem dwuliściem, wsparte kolumienką, nad którą ażurowy kwiaton. W górnej części płyciny zamknięte są&nbsp;łukiem Tudorów i zwieńczone stylizowaną
+  fialą, nad siedziskiem półokrągła płycina, w której ażurowy trójliść. Stan zachowania ławek jest&nbsp;dobry, odnowione zostały w latach 1995-2000. </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_19.jpg" alt="Ryc_19" style="width:100%;max-width:620px">
+  <p> 24. Kobylin Borzymy, Karta ewidencyjna, stan zachowania z  1995r. </p>
+  <img src="w3images/Ryc_20.jpg" alt="Ryc_20" style="width:100%;max-width:420px">
+  <p> 25. Kobylin Borzymy, ławki w nawie kościoła, stan zachowania współcześnie. </p>
+  </div> 
+  
+  
+  <h3 class="w3-left-align">  Płonka Kościelna </h3>
+  <p align="justify"> 	W neogotyckim kościele w Płonce Kościelnej (1905-1913), znajdują się ławki o bardzo bliskich formach, także zwieńczone stylizowanymi fialami. 
+  Nie są one jednak tak ażurowe, jak w Kobylinie, boki na wysokości siedziska dekorowane są trójliściem pełnym, podstawy także są pełne. Ponadto całe boki ławek są wertykalne,
+  nie dzielone w połowie wysokości na dwie części.</p>
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_20_b.jpg" alt="Ryc_20_b" style="width:100%;max-width:620px">
+  <p> 26. Płonka Kościelna, ławki, stan zachowania współcześnie. </p>
+  </div> 
+  
+  
+  <h3 class="w3-left-align">  Kobylin Borzymy – ławki kolatorskie </h3>
+  <p align="justify"> W nawie kościoła znajdowały się po obu stronach neogotyckie ławki kolatorskie z pocz. XXw. o dość oryginalnej formie – otaczające połowę filara, 5-osiowe,
+  zbudowane w konstrukcji ramowo-płycinowej, na wysokim cokole, o 3 ścianach w zaplecku i przedpiersiu. Przedpiersia po bokach ujęte krzyżami, zaplecki o płycinach wypełnionych
+  tapicerką, ramach okrągłymi kolumienkami
+z pseudokapitelami, zwieńczone nad płycinami –&nbsp;niewielkimi sterczynami, nad kolumienkami – wysokimi sterczynami z daszkiem i szpikulcem. Jeszcze w 1995r. określono stan ławek
+ jako dobry. </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_21.jpg" alt="Ryc_21" style="width:100%;max-width:420px">
+  <p> 27. Kobylin Borzymy, ławki kolatorskie, Karta ewidencyjna, stan zachowania z 1995r. </p>
+  </div> 
+  
+  <h3 class="w3-left-align">  Kobylin Borzymy - stalle </h3>
+  <p align="justify">  Do kompletu wyposażenia kościoła w Kobylinie Borzymach należą także neogotyckie stalle
+z pocz. XXw. Wykonane są w konstrukcji ramowo-płycinowej, podzielone na 6 osi, na wysokim cokole, zwieńczone zarówno w przedpiersiu, jak i zaplecku prostym, profilowanym gzymsem.
+O&nbsp;płycinach w zaplecku zamkniętych łukiem Tudorów, natomiast w przedpiersiu – prostokątnych ze zwieńczeniem w formie fryzu arkaturowego o&nbsp;łukach ostrych, natomiast ramach
+ dekorowanych półokrągłą półkolumienką. Boki otwarte, poniżej siedziska podtrzymywane okrągłą kolumną. Stalle zwieńczone są wimpergami ze sterczynami na osi.</p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_22.jpg" alt="Ryc_22" style="width:100%;max-width:320px">
+  <p> 28. Kobylin Borzymy, stalle, stan zachowania współcześnie. </p>
+  </div> 
+  
+  <h3 class="w3-left-align">  Rajgród </h3>
+  <p align="justify"> W dość odległym od diecezji łomżyńskiej Rajgrodzie istniały jeszcze do niedawna ławki neogotyckie, powstałe na przełomie XIX i XXw. Bardzo&nbsp;słabej 
+  jakości materiał fotograficzny nie pozwala na dokładniejsze określenie ich form ani konstrukcji, można jedynie przypuszczać, że&nbsp;technicznie były wykonane w konstrukcji 
+  ramowo-płycinowej, w ściankach bocznych także ramowo-płycinowych najprawdopodobniej znajdowały się wypełnienia z maswerkami zamkniętymi trójliściem, zwieńczone płaskim 
+  trójliściem i ażurowym kwiatem. W 1990r. Stan&nbsp;zachowania ławek był dobry, aczkolwiek wykazywały zniszczenia wynikające z długiego użytkowania, np. zabrudzenia, podrapania, 
+  porysowania. Ławki w tamtym czasie były pomalowane wtórnie na kolor brązowy i należało je zestroić kolorystycznie z pozostałymi elementami wyposażenia kościoła. </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_23.jpg" alt="Ryc_23" style="width:100%;max-width:320px">
+  <p> 29. Rajgród, ławki, Karta ewidencyjna, stan zachowania z 1990r. </p>
+  </div> 
+ </div> 
+  
+  <!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="aboutImportowane">
+  <h2 class="w3-center">Obiekty importowane</h2>
+ <!-- <p class="w3-center"><em>I love photography</em></p> -->   
+  
+  <h3 class="w3-left-align">  Poręba </h3>
+  <p align="justify"> Importowany ze Śląska barokowy, intarsjowany tron biskupi, z kręconymi kolumienkami z kościoła parafialnego w Porębie w powiecie ostrowskim. </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_24.jpg" alt="Ryc_24" style="width:100%;max-width:320px">
+  <p> 30. Poręba, gm. Ostrów Maz., tron biskupi, Katalog Zabytków Sztuki, stan zachowania z 1974r. </p>
+  <img src="w3images/Ryc_25.jpg" alt="Ryc_25" style="width:100%;max-width:320px">
+  <p> 31. Poręba, gm. Ostrów Maz., tron biskupi, stan zachowania współcześnie. </p>
+  </div> 
+  
+  <h3 class="w3-left-align">  Kobylin Borzymy – ławy w domu parafialnym </h3>
+  <p align="justify"> Do dalekich wzorców sięga wyposażenie domu parafialnego w Kobylinie-Borzymach – dębowe, neogotyckie ławki, stalle i ławy kolatorskie z&nbsp;1890r., 
+  zdobione są niezwykłą na tych terenach dekoracją snycerską. Boczne oparcia mają formy skrzydlatych smoków. Warto na nie zwrócić uwagę, ze względu na analogie, bowiem 
+  wzorowane są na ławkach w katedrze w Münster. Pochodzą one z kościoła w Dąbrowie Wielkiej. </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_26.jpg" alt="Ryc_26" style="width:100%;max-width:220px">
+  <p> 32. Kobylin Borzymy, ławki w domu parafialnym, Katalog Zabytków Sztuki, stan zachowania z 1986r. </p>
+  </div> 
+  
+  <h3 class="w3-left-align">  Andrzejewo </h3>
+  <p align="justify"> Ławki, z dekoracjami boków analogicznymi jak w Kobylinie Borzymach, znajdują się w średniowiecznym kościele w Andrzejewie, wznoszonym etapowo od 1526r.
+  do pocz. XVIIw. </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_27.jpg" alt="Ryc_27" style="width:100%;max-width:620px">
+  <p> 33. Andrzejewo, ławki w nawie, stan zachowania współcześnie. </p>
+  </div> 
+ 
+   
+
+ <h3 class="w3-left-align">  Jasienica </h3>
+  <p align="justify"> Podobne ławki istnieją w neogotyckim kościele w Jasienicy, wzniesionym w latach 1873-1880, gdzie jednak opracowanie snycerskie jest płytsze,
+  bez podrzeźbiania, a boczki nad siedziskiem mają kształt płaskiej ślimacznicy. </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_27_b.jpg" alt="Ryc_27_b" style="width:100%;max-width:420px">
+  <p> 34. Jasienica, ławki, stan zachowania współcześnie. </p>
+  </div> 
+ </div> 
+  
+</div> 
+ 
+  
+  <!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="aboutWarsztaty">
+  <h2 class="w3-center">Warsztaty i twórcy ludowi</h2>
+ <!-- <p class="w3-center"><em>I love photography</em></p> -->   
+  
+  
+  <h3 class="w3-left-align">  Kamieńczyk </h3>
+  <p align="justify"> Niektórzy twórcy ludowi nie są znani z nazwiska, mimo że ich realizacje można umieścić wśród stolarki na dobrym poziomie technicznym. W&nbsp;rejonie 
+  Wyszkowa można tu wymienić twórcę nieistniejących ławek z kościoła w Kamieńczyku. Zostały one wykonane w XIXw. w stylistyce barokizującej, z wklęsło-wypukłymi bokami
+  obramowanymi podrzeźbianym ceownikiem i esownikiem, o wywiniętej górnej krawędzi. W 1985r. założono białą kartę, natomiast już w 1994r. informuje się, że zostały zlikwidowane
+  ze względu na zły stan zachowania. Trudno określić ich&nbsp;konstrukcję, ze względu na mocno zacienione fotografie archiwalne, być może zaplecki miały konstrukcję ramowo-płycinową,
+  a ścianki boczne deskową, z całą pewnością jednak nie posiadały podłogi i umieszczone były na ramie. </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_28.jpg" alt="Ryc_28" style="width:100%;max-width:420px">
+  <p> 35. Kamieńczyk, nieistniejące ławki, Karta ewidencyjna, stan zachowania z 1985r. </p>
+  </div> 
+  
+  
+  <h3 class="w3-left-align"> Piski  </h3>
+  <p align="justify"> Barokizujące formy miały nieistniejące ławki kolatorskie z kościoła w Piskach, które pochodziły z XIXw. Jeszcze w 1971r. wzmiankowano na&nbsp;ich&nbsp;temat w
+  białej karcie zwłaszcza w zakresie złego stanu zachowania i konieczności naprawy stolarskiej, w 2002r. już nie istniały. Były&nbsp;to&nbsp;sedilia przeznaczone dla 4 osób,
+  z furtkami, na cokole, najprawdopodobniej o konstrukcji ramowo-płycinowej, gdzie zaplecek wzmocniony był&nbsp;pośrodku pionową listwą, tworzącą 2 płyciny, na których znajdowały
+  się aplikacje z desek o ściętych półokrągło narożach, z profilowanymi brzegami. Ścianki boczne, jak również drzwi, najprawdopodobniej były wykonane w konstrukcji deskowej,
+  z aplikacją deskową, opracowaną analogicznie jak w zaplecku. Ścianki boczne wraz z drzwiczkami zamknięte były górą falistą linią z wąską aplikacją powtarzającą jej kształt
+  i&nbsp;zawiniętą z przodu. </p> 
+  <div class="w3-container w3-center">
+  <img src="w3images/Ryc_29.jpg" alt="Ryc_29" style="width:100%;max-width:420px">
+  <p> 36. Piski, ławki, Karta ewidencyjna, stan zachowania z 1995r. </p>
+  </div> 
+ </div>  
+  
+
+
+<div class="w3-content w3-container w3-padding-64" id="aboutEklektyczne">
+  <h2 class="w3-center">Grupa ławek eklektycznych z Czerwina, Słucza i Drozdowa</h2>
+ <!-- <p class="w3-center"><em>I love photography</em></p> -->   
+  
+  
+  <h3 class="w3-left-align"> DROZDOWO, pow. łomżyński, gm. Piątnica  </h3>
+  <p align="justify"> Ławki kościelne, jakie znajdowały się tu jeszcze przed ostatnimi pracami remontowymi, należały do dwóch kompletów w dwóch różnych stylach: 
+  eklektycznym oraz neobarokowym. Literatura przypisuje eklektyczne zapewne także Witoldowi Lanciemu i datuje na ok. 1880r., natomiast neobarokowe, pochodzące z kościoła
+  w Stawiskach, datuje się na koniec XIXw.<br>
+	Ławki eklektyczne posiadają ścianki boczne wykrawane snycersko: na wysokości siedziska
+z dekoracyjną, okrągłą płyciną o centralizującej dekoracji; nad którą bezporządkowa kolumienka podtrzymująca zwieńczenie z płaskorzeźbionym krzyżem, zwieńczone formą stylizowanej muszli
+i wachlarza, rozdzielonych na trzy strony, z centralnym motywem stylizowanego kaboszonu. Przedpiersia i zaplecki zamykające segmenty dekorowane trzema płycinami, zdobionymi podwójnym łukiem pełnym. W latach 80 ławki były w dobrym stanie, w 2009r. częściowo wymagały naprawy, natomiast obecnie zostały przeniesione na czas remontu wnętrza kościoła i nie są dostępne, nie można więc stwierdzić stanu zachowania.
+	<br>Ławki wykonane zostały w konstrukcji mieszanej: deskowej w partii zaplecków siedzisk i boków, natomiast przedpiersia i zaplecki zamykające segmenty - ramowo-płycinowej. Dobór konstrukcji deskowej przez stolarza może świadczyć o tradycyjnym warsztacie, ale też o pewnym zapóźnieniu konstrukcyjnym, bowiem w tym okresie była ona już bardzo przestarzała, rzadko do niej sięgano.
+ </p> 
+  
+ 
+  <h3 class="w3-left-align"> SŁUCZ, pow. grajewski, gm. Radziłów </h3>
+  <p align="justify"> 	Wyposażenie pierwotne snycerskie kościoła jednolite, neogotyckie z elementami neoromańskimi, pochodzące w całości z ok. 1910r. Obecne ławki w nawie całkowicie wymienione
+na współczesne, naśladujące częściowo oryginał. Z tego powodu nie jest możliwe szczegółowe opisanie ławek, jak też ich konstrukcji, technik wykończeniowych itd.<br>
+	W prezbiterium pozostał komplet oryginalnych sediliów z pierwotnego wyposażenia, które wybudowano w konstrukcji ramowo-płycinowej, jako złożone z 4 ram. Zaplecek wysoki,
+z nadwieszonym baldachimem, o prostych ramach, w których arkadowe dekoracje płycin, zamknięte wywiniętymi ceownikami, nad którymi kwiaton. Baldachim atektonicznie do niższej
+ części – podzielony na 3 części, z fryzem arkadkowym, pomiędzy którym na osi ram kule, zamknięty profilowanym prosto gzymsem, nad którym fryz ze stylizowanych muszli
+ i cienkich liści akantu. Przedpiersie dzielone na 4 części-ramy, w których podwójne arkadowe dekoracje. Boki z drzwiczkami, w konstrukcji ramowo-płycinowej, z&nbsp;arkadową
+ dekoracją o prostym profilu.
+ </p> 
+ <div class="w3-container w3-center">
+  <img src="w3images/Ryc_29_b.jpg" alt="Ryc_29_b" style="width:100%;max-width:420px">
+  <p> 37. Słucz, prezbiterium, stalle, stan zachowania współcześnie. </p>
+  <img src="w3images/Ryc_29_c.jpg" alt="Ryc_29_c" style="width:100%;max-width:420px">
+  <p> 38. Słucz, prezbiterium, stalle, stan zachowania współcześnie. </p>
+  </div> 
+ 
+ 
+ 
+  
+  
+  <h3 class="w3-left-align">  CZERWIN, pow. ostrołęcki, gm. Czerwin </h3>
+  <p align="justify"> Wycofujące się w 1920r. z Czerwina wojska rosyjskie zniszczyły kościół, wraz
+z wyposażeniem, w tym ławki – we wnętrzu świątyni znajdowała się stajnia dla koni. Obiekt kolejny raz wymagał pilnych prac remontowych, po przeprowadzeniu których rozpoczęto wymianę 
+części wyposażenia. W&nbsp;1933r. wstawiono do wnętrza 10 ławek, w 1935r. dalszych 14, w kolejnym roku pozostałe 4. Odnowione zostały niektóre elementy wyposażenia kościoła,
+ np. chrzcielnica, wstawiono nową ambonę i tabernakulum. Wstawiono i wyremontowano dębowe konfesjonały, których w&nbsp;sumie wewnątrz stało 11.<br>
+ Ławki dla wiernych znajdują się w jedynym przęśle nawy i częściowo na skrzyżowaniu nawy z ramionami transeptu, rozmieszczone są po obu stronach osi budowli, po dwa moduły
+ z każdej strony, w każdym module znajduje się 7 ławek. Moduły posiadają wymiary: dł. ok. 505cm, szer. ok.&nbsp;195cm, wys. ok. 135cm. Obecnie jeden z modułów został przewieziony
+ do kaplicy w sąsiedniej miejscowości, przynależącej do parafii Czerwin. Moduł umieszczony na podwyższonej podłodze, złożony jest z przedpiersia, siedzisk połączonych z pulpitami
+ i podnóżkami oraz zaplecka. Przedpiersia i zaplecki dekorowane analogicznie, podzielone ramami na cztery płyciny, które udekorowane są podwójnymi, profilowanymi arkaturami.
+ Boki ławek na szerszych, uskokowych cokołach, zdobione pionową ramową dekoracją ujmującą wgłębną płycinę arkadowym profilem. W miejscu siedziska znajduje się półokrągły występ,
+ dekorowany wgłębną płyciną i ramą o kształcie krzyża, połączoną z pionową ramową dekoracją. Nad występem umieszczona jest niewysoka kolumienka z bazą i torusem, o gładkim trzonie,
+ z umieszczonym na anulusie kapitelem nawiązującym do kostkowego, dekorowanym podrzeźbianymi ślimacznicami. Pionowa rama w górnej, zamkniętej arkadowo części, dekorowana jest
+ podrzeźbianym sześcioramiennym kwiatem. Całość zamknięta jest od góry dekoracyjnym, stylizowanym, podrzeźbianym pół-kwiatonem na bazie o bokach zaokrąglonych dołem.<br>
+	Warto zwrócić uwagę, że we wnętrzu kościoła znajdują się także pojedyncze ławki o nieco innej konstrukcji (ramowo-płycinowej) i dekoracji, stanowiące pendant z konfesjonałami.
+	Ławki te być może pierwotnie pełniły funkcję kolatorskich. Ławki obecnie przeniesione zostały do prezbiterium
+po obu stronach ołtarza głównego oraz pod emporę organową.<br>
+	Ławki zostały wykonane z drewna iglastego. Do budowy użyto różnych rodzajów konstrukcji: podłogę i zaplecki wykonano w konstrukcji deskowej, przedpiersia i zaplecki zamykające
+	każdy moduł - w konstrukcji ramowo-płycinowej, natomiast boki ławek - w konstrukcji deskowej, na którą po wykonaniu rysunku ołówkiem nałożono dekoracyjne ramy przymocowane
+	za pomocą cienkich gwoździków i prawdopodobnie kleju. Deski podłogi montowane są na gwoździe do ramy, która  jest łączona ukośnym złączem stykowym na zwidłowanie Do dekoracji
+	ławek użyto techniki podrzeźbiania dłutem, prawdopodobnie bez rysunku wstępnego – każdy sześcioramienny kwiat ma nieco inny kształt i rozmieszczenie na płaszczyźnie ramy.
+	W zakresie technik snycerskich użyto do wykonania ram fazowania i profilowania.<br>
+	Badania in situ pozwoliły stwierdzić istnienie na powierzchni ławek pierwotnej warstwy malarskiej i najprawdopodobniej jednej warstwy grubego wtórnego przemalowania przy
+	użyciu pędzla, farbą olejną w dwóch odcieniach brązu. Pierwotnie ławki były pokryte cienko nakładanym mazerunkiem – zdobniczą techniką malarską imitującą usłojoną powierzchnię
+	szlachetnego drewna.
+Na pół-kwiatonach wieńczących boki ławek mazerunek jest mniej starannie położony.
+
+<div class="w3-container w3-center">
+  <img src="w3images/Ryc_39.jpg" alt="Ryc_39" style="width:100%;max-width:420px">
+  <p> 39. Czerwin, ławki, widok boczny, stan zachowania współcześnie. </p>
+  <img src="w3images/Ryc_40.jpg" alt="Ryc_40" style="width:100%;max-width:420px">
+  <p> 40. Czerwin, ławki, detal, fragmenty opracowania powierzchni. </p>
+  </div> 
+ 
+
+<br><br>
+	Ławki z kościołów w Drozdowie, Słuczu i Czerwinie pod względem snycerki cechuje bogactwo form artystycznych o charakterze nieco ludowym, wernakularnym – zwłaszcza w Słuczu
+i Czerwinie, zakorzenionych w lokalnej tradycji. Z tego powodu niełatwo jest określić ich przynależność stylistyczną pod względem czasu powstania. Niemniej jednak, analizując
+ je w zakresie form artystycznych, należy stwierdzić, że na tle większości zabytkowych ławek w regionie, omawiane obiekty wyróżnia niezwykła, niespotykana stylistyka form, 
+ nie w każdym przypadku jednorodna
+z&nbsp;pozostałymi elementami wyposażenia. Najwcześniej wybudowane były ławki w Drozdowie, z ok. 1880r., przypisywane Witoldowi Lanciemu, który jakoby miał zaprojektować je jako
+ integralne
+z całym wyposażeniem i architekturą kościoła. Na podstawie tego projektu wykonać je musiał warsztat stolarski. W Słuczu z pewnością powstały ok. 1910r., spod ręki nieznanego
+ projektanta. Ławki
+z Czerwina, wybudowane w latach 1933-35, są zupełnie niezwiązane z&nbsp;pozostałymi elementami wyposażenia kościoła, acz niosą bardzo duży ładunek historyczno-emocjonalny, jako
+ odzwierciedlenie kontekstu historii całej miejscowości.<br>
+	Wartość naukowa analizowanych ławek polega przede wszystkim na tym, że są one dowodem na istnienie warsztatu stolarsko-snycerskiego działającego na przełomie XIX i XXw.
+	oraz w latach 30-tych na terenie północnego Mazowsza, być może miejscowego, specjalizującego się w wykonywaniu wyposażenia dla obiektów sakralnych, który reprezentowali
+	anonimowi twórcy i rzemieślnicy, bez przygotowania akademickiego. Z&nbsp;całą pewnością były one wykonane na podstawie wzorników, dość powszechnie stosowanych w stolarstwie
+	tamtych czasów. Są one także dowodem na stosowanie
+w regionie, w okresie ich powstania lżejszej konstrukcji ramowo-płycinowej, na równi z dość już archaiczną jak na pocz. XXw. konstrukcją deskową z opierzeniami. Wykończenie
+ powierzchni mebla z Czerwina techniką mazerunku, świadczy o popularności tej powszechnie stosowanej metody, zwłaszcza na przełomie XIX i XXw., w regionie północnego Mazowsza
+ tak samo jak w całej Polsce.<br>
+	Warto zwrócić uwagę na ławki - obiekty w przestrzeni sakralnej, które nie należą do sakralizowanych, tym bardziej, że dotychczas, jak się okazuje, bardzo rzadko podlegały
+	opracowaniom naukowym, a jeżeli były omawiane to zazwyczaj w szerszym opracowaniu, acz skromnie, nawet jednym zdaniem. Zwłaszcza, że&nbsp;giną w szybkim tempie, co widać przy
+	porównaniu Katalogu Zabytków Sztuki w Polsce ze stanem obecnym. Zwłaszcza, że&nosp;obecnie tradycyjne rozumienie zabytku jako dokumentu historycznego i dzieła sztuki zostało
+	zastąpione znacznie szerszym pojęciem dziedzictwa, które stanowi nieograniczony zbiór niewspółczesnych elementów rzeczywistości materialnej i niematerialnej o bardzo 
+	zróżnicowanej wartości, tworzony decyzją wielu podmiotów. </p> 
+  
+  
+  
+  <h2>LITERATURA:</h2>
+
+<ol>
+  <li>Betlej, Andrzej, Osiemnastowieczne ornamentalne „Klebebandy” w zbiorach polskich, Ornament i dekoracja dzieła sztuki. Studia z historii sztuki, Warszawa 2015, s. 249-261.</li>
+  <li>Boguski, Jan, Przyczynek do dziejów Czerwina i okolic: (do 1918 roku), Zeszyty Naukowe Ostrołęckiego Towarzystwa Naukowego, 9/1995, s. 310-316.</li>
+  <li>Boguski, Jan, Czerwin i okolice, Towarzystwo Przyjaciół Ostrołęki, Ostrołęka 2001.</li>
+  <li>Dzieje parafii i kościoła pw. Trójcy Przenajświętszej w Myszyńcu, pr. zb. pod red. Marii Przytockiej, Ostrołęckie Towarzystwo Naukowe im. Adama Chętnika, Ostrołęka 2009.</li>
+  <li>Fausek, Marcin; Olszewska-Świetlik, Justyna, Rodzaje opracowań w technice mazerunku
+na wybranych przykładach dziewiętnastowiecznej stolarki kościelnej z terenów Pomorza Zachodniego, Acta Universitatis Nicolai Copernici, Zabytkoznawstwo i Konserwatorstwo, T. XLIX, Toruń 2018,
+s. 289-304.</li>
+  <li>Jemielity, Witold, Z dziejów diecezji łomżyńskiej, Studia Łomżyńskie, T. XI, s. 77-88.</li>
+  <li>Jemielity, Witold, Rozwój sieci parafialnej w Puszczy Kurpiowskiej, Roczniki Humanistyczne T. XXIII, z. 2, 1975, s. 151-185.</li>
+  <li>Jemielity, Witold, Podział administracyjny diecezji wigierskiej, diecezji augustowskiej, czyli sejneńskiej i diecezji łomżyńskiej, Studia Łomżyńskie, T. II, 1989, s. 163-179.</li>
+  <li>Katalog Zabytków Sztuki w Polsce, T X, Dawne województwo warszawskie, pod red. Izabelli Galickiej i Hanny Sygietyńskiej, z. 11, Ostrołęka i okolice, IS PAN, Warszawa 1983, s. 2-6.</li>
+  <li>Łoza, Stanisław, Słownik architektów i budowniczych polaków oraz cudzoziemców w Polsce pracujących, wyd. II, uzup., Wyd. Kasy im. Mianowskiego, Instytutu Popierania Nauki, Warszawa 1930, s. 187, hasło: Lanci Witold.   </li>
+  <li>Paprocka, Wanda, Myszyniec jako ośrodek kultury kurpiowskiej od połowy XVIII wieku do roku 1870, Zeszyty Naukowe Ostrołęckiego Towarzystwa Naukowego, z. 12, 1998, s. 40-53.   </li>
+  <li> Rejestr zabytków województwa podlaskiego na dzień 3.03.2022r.  </li>
+  <li>  Schramm, Alina, Historia majątku w Drozdowie. Od Drozdowskich do Lutosławskich, "Studia Łomżyńskie", 11, 2000, s. 181-194. </li>
+  <li> Skorowidz miejscowości Rzeczypospolitej Polskiej: opracowany na podstawie wyników pierwszego powszechnego spisu ludności z dn. 30 września 1921 r. i innych źródeł urzędowych., t. T. 5, województwo białostockie, 1924, s. 47.  </li>
+  <li> Słownik Geograficzny Królestwa Polskiego i innych krajów słowiańskich, pod red. Filipa Sulimierskiego, Bronisława Chlebowskiego, Władysława Walewskiego, T. I, Warszawa 1880, s. 836.  </li>
+  <li> Słownik Geograficzny Królestwa Polskiego i innych krajów słowiańskich, pod red. B. Chlebowskiego, W. Walewskiego, F. Sulimierskiego, T. X, Warszawa 1889, s. 847.  </li>
+  <li> Szmygin, Bogusław; Fortuna-Marek, Anna; Siwek, Andrzej, Wartościowanie dziedzictwa w systemie SV -metoda i przykłady zastosowania, Politechnika Lubelska, Lublin 2017.  </li>
+  <li> Tymińska-Widmer, Ludmiła, Technika mazerunku w zdobieniu sprzętów kościelnych. Zagadnienia technologiczne, funkcjonalne i konserwatorskie, [w:] Zabytkowa stolarka we wnętrzach sakralnych
+i jej problematyka konserwatorska, pod red. Janusza Krawczyka, Wydawnictwo Naukowe Uniwersytetu Mikołaja Kopernika, Toruń 2010, s. 321-328.  </li>
+  <li> Zabytkowa stolarka we wnętrzach sakralnych i jej problematyka konserwatorska, pod red. Janusza Krawczyka, Wydawnictwo Naukowe Uniwersytetu Mikołaja Kopernika, Toruń 2010.  </li>
+ </ol> 
+
+  <h2>DOKUMENTACJE ARCHIWALNE:</h2>
+
+<ol>
+   <li> Czerwin – kościół parafialny pw. św. Trójcy. Dokumentacja historyczno-architektoniczna, opr. Maria Przytocka, Sława Mojzych-Rudowska, Romuald Merchel, Olsztyn 1995, Archiwum WUOZ Ostrołęka sygn. nr 48A/97.  </li>
+  <li> Klęcznik, Kolno, Karta ewidencyjna zabytków architektury, opr. R. C. Gwizdon, 1997, Archiwum WUOZ Łomża, sygn. 2580.  </li>
+  <li> Konfesjonał, Piski, Karta ewidencyjna zabytków architektury, opr. H. Struk, 1971, Archiwum WUOZ Ostrołęka sygn. nr 1696.  </li>
+  <li> Kościół parafialny NMP, Słucz, Karta ewidencyjna zabytków architektury, opr. T. Krzyżanowska, 1979, Archiwum WUOZ Łomża, sygn. 399.  </li>
+  <li> Kościół parafialny pw. Przenajświętszej Trójcy, Czerwin, Karta ewidencyjna zabytków architektury, opr. P. Hapka, A. Rutkowski, 1984, Archiwum WUOZ Ostrołęka sygn. nr 191.  </li>
+  <li> Kościół parafialny pw. św. Jakuba, Drozdowo, Karta ewidencyjna zabytków architektury, opr. W. Boruch, 1987, Archiwum WUOZ Łomża, sygn. 1092.  </li>
+  <li> Ława kolatorska, Stawiski, Karta ewidencyjna zabytków architektury, opr. R. Juraszowa, 1977, Archiwum WUOZ Łomża, br. sygn.  </li>
+  <li> Ława, Stawiski, Karta ewidencyjna zabytków architektury, opr. T. Żurkowska-Mastalerz, 1964, Archiwum WUOZ Łomża, br. sygn.  </li>
+  <li> Ławka kolatorska, Brańszczyk, Karta ewidencyjna zabytków architektury, opr. W. Puget, 1968, Archiwum WUOZ Ostrołęka sygn. nr 90.  </li>
+  <li> Ławka kościelna, Szczepankowo, Karta ewidencyjna zabytków architektury, opr. T. Czyżewski, 2008, Archiwum WUOZ Łomża, sygn. 3356.  </li>
+  <li> Ławka z klęcznikiem, Kolno, Karta ewidencyjna zabytków architektury, opr. R. Juraszowa, 1979, Archiwum WUOZ Łomża, br. sygn.  </li>
+  <li> Ławki, Kamieńczyk, Karta ewidencyjna zabytków architektury, opr. W. Puget, 1985, Archiwum WUOZ Ostrołęka sygn. nr 663.  </li>
+  <li> Ławki, Drozdowo, Karta ewidencyjna zabytków architektury, opr. R. Juraszowa, 1981, Archiwum WUOZ Łomża, br. sygn.  </li>
+  <li> Ławki, Kobylin Borzymy, Karta ewidencyjna zabytków architektury, opr. J. Zajkowski, 1995, Archiwum WUOZ Łomża, sygn. 2539.  </li>
+  <li> Ławki kolatorskie, Kobylin Borzymy, Karta ewidencyjna zabytków architektury, opr. J. Zajkowski, 1995, Archiwum WUOZ Łomża, sygn. 2537.  </li>
+  <li> Ławki, Kolno, Karta ewidencyjna zabytków architektury, opr. R. C. Gwizdon, 1997, Archiwum WUOZ Łomża, sygn. 2579.  </li>
+  <li> Ławki, Łomża, Karta ewidencyjna zabytków architektury, opr. R. C. Gwizdon, 1999, Archiwum WUOZ Łomża, sygn. 2767.  </li>
+  <li> Ławki Myszyniec, Karta ewidencyjna zabytków architektury, opr. D. Čirov, 1996, Archiwum WUOZ Ostrołęka sygn. nr 2734.  </li>
+  <li> Ławki, Rajgród, Karta ewidencyjna zabytków architektury, opr. R. C. Gwizdon, 1990, Archiwum WUOZ Łomża, sygn. 2408.  </li>
+  <li> Ławki, Zaręby Kościelne, Karta ewidencyjna zabytków architektury, opr. H. Muszyńska, 1969, Archiwum WUOZ Ostrołęka br. sygn.  </li>
+  <li> Stalle, Kobylin Borzymy, Karta ewidencyjna zabytków architektury, opr. J. Zajkowski, 1995, Archiwum WUOZ Łomża, sygn. 2538.  </li>
+  <li> Stalle, Kolno, Karta ewidencyjna zabytków architektury, opr. R. Juraszowa, 1979, Archiwum WUOZ Łomża, br. sygn.  </li>
+  <li> Stalle, Łomża, Karta ewidencyjna zabytków architektury, opr. I. Galicka, H. Sygietyńska, 1963, Archiwum WUOZ Łomża, sygn. 149/1.  </li>
+    <li> Stalle, Szczuczyn, Karta ewidencyjna zabytków architektury, opr. R. Juraszowa, 1979, Archiwum WUOZ Łomża, sygn. 84/1.  </li>
+  <li> Kałamajska-Saeed, Maria, Szczuczyn, wystrój kościoła popijarskiego, studium historyczne, Warszawa 1976, Archiwum NID Warszawa, mps.  </li>
+</ol>  
+
+
+  
+  
+  
+  
+  
+  
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b>Zrealizowano w ramach stypendium <br> Ministra Kultury i Dziedzictwa Narodowego</b></p><br>
+      <img src="w3images/MKiDNkolor.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices   w3-opacity w3-hover-opacity-off -->
+  
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+<!--  <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">14+</span><br>
+    Partners
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">55+</span><br>
+    Projects Done
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">89+</span><br>
+    Happy Clients
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">150+</span><br>
+    Meetings
+  </div>
+</div>  -->
+
+<!-- Second Parallax Image with Portfolio Text -->
+
+<!-- Container (Portfolio Section) -->
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
